@@ -1,0 +1,88 @@
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="style.css" rel="stylesheet"/>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FCC: Tribute Page</title>
+</head>
+
+<body>
+    <main id="main">
+        <!-- HEADER -->
+        <header>
+            <h1 id= "title">Using Basic Git Command</h1>
+            <br />
+            <div id="img-div">
+                <img id= "image" src= "https://i.pinimg.com/originals/e0/3e/db/e03edbe588d3866d539e5bbb35d9080c.jpg"
+                alt="Norman photo">
+                <p id="img-caption" >.</FCC:>
+            </div>
+        </header>
+        
+        <!-- Body -->
+        <article id="tribute-info">
+            <ul>
+                <h2> When you need init repository:</h2>
+                <li> git init</li>
+                <li> git remote add origin [remote repository url]</li>
+                <li> git push -u origin [branch]</li>
+                <p>Push upstream local branch to remote branch</p>
+                <h2> When you have exist repository:</h2>
+                <li> git clone origin [remote repository url]</li>
+                <h2> When you need to change remote repository exist repository:</h2>
+                <li> git remote git remote set-url origin [remote repository url]</li>
+                <h2> Global config user and id:</h2>
+                <li> git conflig --global user.name = "Your Name"</li>
+                <li> git conflig --global user.email = "YourName@gmail.com"</li>
+                <h2> Show Log:</h2>
+                <li> git log</li>
+                <h2> Show Log Graphic With One Line and All Branch:</h2>
+                <li> git log --graph --decorate --online --all</li>
+                <h2> When You Commit and Realized Need Make Small Change:</h2>
+                <li> git commit -amend --no-edit</li>
+                <p> About using this command, your history is not add more commit. You could also commit and
+                    keep history by using git rebase -i then stash them.
+                    Warning: You Shouldn't commit -amend when have been push on remote Branch
+                    should change it at local branch</p>
+                <h2> When You Need Undo Your Change To A file:</h2>
+                <li>git log</li>
+                <p>git log to find commit hash</p>
+                <li> git checkout [saved hash] -- path/to/file</li>
+                <p>saved hash is a commit you want to checkout</p>
+                <li>git commit -m "wow, you dont have to copy and paste</li>
+                <h2>Git Reset Command:</h2>
+                <li>git reset--hard origin branch</li>
+                <p>every thing change in your working directory and staged(index) is change and HEAD is your branch now</p>
+                <li>git reset--soft origin branch</li>
+                <p>HEAD is your branch now but woking directory and staged(index) is not change</p>
+                <li>git reset --mixed origin branch (also git reset origin branch)</li>
+                <p>HEAD is your branch now,staged(index) is change and left in working directory, working directory is not change</p>
+                <p>
+                    <strong>Conclusion:<br/>
+                         --hard: staged(index), working directory change<br>
+                         --mixed(default): staged(index) change, working directory unchange<br>
+                         --soft(default): staged(index) unchange, working directory unchange only HEAD change
+                    </strong>
+                </p>
+            </ul>
+
+
+        </article>
+        <footer id="footer">
+           <div>
+               <p>Reference 
+                    <a id="tribute-link" href="https://ohshitgit.com/" target="_blank">
+                        Git Manual</a>
+               </p>
+            </div> 
+        
+        </footer>
+    </main>
+
+    
+</body>
+
+
+</html>

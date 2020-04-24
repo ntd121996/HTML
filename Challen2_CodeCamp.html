@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="challen2.css" rel="stylesheet" />
+<html>
+<head>
+    <title>FFC:Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id = "title"> Survey Form</h1>
+        <p id="description">This is description for survey form</p>
+    </header>
+<main id="main">
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label"for="name">Name:</label>
+            <input id="name"name="name"type="text" placeholder="Nguyen Van A" required />
+        </fieldset>
+        <fieldset>
+            <label id="email-label"for="email">Email:</label>
+            <input id="email"type="email" placeholder="abc@gmail.com"required />
+            
+        </fieldset>
+        <fieldset>
+            <label id="number-label"for="number">Age:</label>
+            <input id="number"type="number" placeholder="Input Your Age"required
+            min="0" max="100" />
+        </fieldset>
+        <fieldset>
+            <label id="dropdown-label"for="dropdown">Kind:</label>
+            <select id="dropdown">
+                <option value="Kind A">Kind A</option>
+                <option value="Kind B">Kind B</option>
+                <option value="Kind C">Kind C</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label id="radio-button-label1"for="radio-button1">Male:</label>
+            <input id="radio-button-input1" type="radio" name="radio-button"value="off" />
+            <label id="radio-button-label2"for="radio-button2">Female:</label>
+            <input id="radio-button-input2" type="radio" name="radio-button"value="off" />
+        </fieldset>
+        <fieldset>
+            <label id="checkboxes-label"for="checkboxes">Like:</label>
+            <input id="checkboxes-input" type="checkbox" name="Like" value="on" />
+            <br />
+            <label id="checkboxes-label"for="checkboxes">Love:</label>
+            <input id="checkboxes-input" type="checkbox" name="Love" value="on" />
+        </fieldset>
+        <fieldset>
+            <label id="textarea-label"for="textarea">Any comments or suggestions?:</label>
+            <textarea id="textarea-input" row="10" col="100"
+             placeholder="Enter your comment here"> </textarea>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</main>
+</body>
+</html>
